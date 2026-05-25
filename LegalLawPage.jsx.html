@@ -1,0 +1,2344 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/components/LegalLawPage.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> LegalLawPage.jsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/24</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/170</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/7</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/22</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a>
+<a name='L236'></a><a href='#L236'>236</a>
+<a name='L237'></a><a href='#L237'>237</a>
+<a name='L238'></a><a href='#L238'>238</a>
+<a name='L239'></a><a href='#L239'>239</a>
+<a name='L240'></a><a href='#L240'>240</a>
+<a name='L241'></a><a href='#L241'>241</a>
+<a name='L242'></a><a href='#L242'>242</a>
+<a name='L243'></a><a href='#L243'>243</a>
+<a name='L244'></a><a href='#L244'>244</a>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a>
+<a name='L255'></a><a href='#L255'>255</a>
+<a name='L256'></a><a href='#L256'>256</a>
+<a name='L257'></a><a href='#L257'>257</a>
+<a name='L258'></a><a href='#L258'>258</a>
+<a name='L259'></a><a href='#L259'>259</a>
+<a name='L260'></a><a href='#L260'>260</a>
+<a name='L261'></a><a href='#L261'>261</a>
+<a name='L262'></a><a href='#L262'>262</a>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a>
+<a name='L275'></a><a href='#L275'>275</a>
+<a name='L276'></a><a href='#L276'>276</a>
+<a name='L277'></a><a href='#L277'>277</a>
+<a name='L278'></a><a href='#L278'>278</a>
+<a name='L279'></a><a href='#L279'>279</a>
+<a name='L280'></a><a href='#L280'>280</a>
+<a name='L281'></a><a href='#L281'>281</a>
+<a name='L282'></a><a href='#L282'>282</a>
+<a name='L283'></a><a href='#L283'>283</a>
+<a name='L284'></a><a href='#L284'>284</a>
+<a name='L285'></a><a href='#L285'>285</a>
+<a name='L286'></a><a href='#L286'>286</a>
+<a name='L287'></a><a href='#L287'>287</a>
+<a name='L288'></a><a href='#L288'>288</a>
+<a name='L289'></a><a href='#L289'>289</a>
+<a name='L290'></a><a href='#L290'>290</a>
+<a name='L291'></a><a href='#L291'>291</a>
+<a name='L292'></a><a href='#L292'>292</a>
+<a name='L293'></a><a href='#L293'>293</a>
+<a name='L294'></a><a href='#L294'>294</a>
+<a name='L295'></a><a href='#L295'>295</a>
+<a name='L296'></a><a href='#L296'>296</a>
+<a name='L297'></a><a href='#L297'>297</a>
+<a name='L298'></a><a href='#L298'>298</a>
+<a name='L299'></a><a href='#L299'>299</a>
+<a name='L300'></a><a href='#L300'>300</a>
+<a name='L301'></a><a href='#L301'>301</a>
+<a name='L302'></a><a href='#L302'>302</a>
+<a name='L303'></a><a href='#L303'>303</a>
+<a name='L304'></a><a href='#L304'>304</a>
+<a name='L305'></a><a href='#L305'>305</a>
+<a name='L306'></a><a href='#L306'>306</a>
+<a name='L307'></a><a href='#L307'>307</a>
+<a name='L308'></a><a href='#L308'>308</a>
+<a name='L309'></a><a href='#L309'>309</a>
+<a name='L310'></a><a href='#L310'>310</a>
+<a name='L311'></a><a href='#L311'>311</a>
+<a name='L312'></a><a href='#L312'>312</a>
+<a name='L313'></a><a href='#L313'>313</a>
+<a name='L314'></a><a href='#L314'>314</a>
+<a name='L315'></a><a href='#L315'>315</a>
+<a name='L316'></a><a href='#L316'>316</a>
+<a name='L317'></a><a href='#L317'>317</a>
+<a name='L318'></a><a href='#L318'>318</a>
+<a name='L319'></a><a href='#L319'>319</a>
+<a name='L320'></a><a href='#L320'>320</a>
+<a name='L321'></a><a href='#L321'>321</a>
+<a name='L322'></a><a href='#L322'>322</a>
+<a name='L323'></a><a href='#L323'>323</a>
+<a name='L324'></a><a href='#L324'>324</a>
+<a name='L325'></a><a href='#L325'>325</a>
+<a name='L326'></a><a href='#L326'>326</a>
+<a name='L327'></a><a href='#L327'>327</a>
+<a name='L328'></a><a href='#L328'>328</a>
+<a name='L329'></a><a href='#L329'>329</a>
+<a name='L330'></a><a href='#L330'>330</a>
+<a name='L331'></a><a href='#L331'>331</a>
+<a name='L332'></a><a href='#L332'>332</a>
+<a name='L333'></a><a href='#L333'>333</a>
+<a name='L334'></a><a href='#L334'>334</a>
+<a name='L335'></a><a href='#L335'>335</a>
+<a name='L336'></a><a href='#L336'>336</a>
+<a name='L337'></a><a href='#L337'>337</a>
+<a name='L338'></a><a href='#L338'>338</a>
+<a name='L339'></a><a href='#L339'>339</a>
+<a name='L340'></a><a href='#L340'>340</a>
+<a name='L341'></a><a href='#L341'>341</a>
+<a name='L342'></a><a href='#L342'>342</a>
+<a name='L343'></a><a href='#L343'>343</a>
+<a name='L344'></a><a href='#L344'>344</a>
+<a name='L345'></a><a href='#L345'>345</a>
+<a name='L346'></a><a href='#L346'>346</a>
+<a name='L347'></a><a href='#L347'>347</a>
+<a name='L348'></a><a href='#L348'>348</a>
+<a name='L349'></a><a href='#L349'>349</a>
+<a name='L350'></a><a href='#L350'>350</a>
+<a name='L351'></a><a href='#L351'>351</a>
+<a name='L352'></a><a href='#L352'>352</a>
+<a name='L353'></a><a href='#L353'>353</a>
+<a name='L354'></a><a href='#L354'>354</a>
+<a name='L355'></a><a href='#L355'>355</a>
+<a name='L356'></a><a href='#L356'>356</a>
+<a name='L357'></a><a href='#L357'>357</a>
+<a name='L358'></a><a href='#L358'>358</a>
+<a name='L359'></a><a href='#L359'>359</a>
+<a name='L360'></a><a href='#L360'>360</a>
+<a name='L361'></a><a href='#L361'>361</a>
+<a name='L362'></a><a href='#L362'>362</a>
+<a name='L363'></a><a href='#L363'>363</a>
+<a name='L364'></a><a href='#L364'>364</a>
+<a name='L365'></a><a href='#L365'>365</a>
+<a name='L366'></a><a href='#L366'>366</a>
+<a name='L367'></a><a href='#L367'>367</a>
+<a name='L368'></a><a href='#L368'>368</a>
+<a name='L369'></a><a href='#L369'>369</a>
+<a name='L370'></a><a href='#L370'>370</a>
+<a name='L371'></a><a href='#L371'>371</a>
+<a name='L372'></a><a href='#L372'>372</a>
+<a name='L373'></a><a href='#L373'>373</a>
+<a name='L374'></a><a href='#L374'>374</a>
+<a name='L375'></a><a href='#L375'>375</a>
+<a name='L376'></a><a href='#L376'>376</a>
+<a name='L377'></a><a href='#L377'>377</a>
+<a name='L378'></a><a href='#L378'>378</a>
+<a name='L379'></a><a href='#L379'>379</a>
+<a name='L380'></a><a href='#L380'>380</a>
+<a name='L381'></a><a href='#L381'>381</a>
+<a name='L382'></a><a href='#L382'>382</a>
+<a name='L383'></a><a href='#L383'>383</a>
+<a name='L384'></a><a href='#L384'>384</a>
+<a name='L385'></a><a href='#L385'>385</a>
+<a name='L386'></a><a href='#L386'>386</a>
+<a name='L387'></a><a href='#L387'>387</a>
+<a name='L388'></a><a href='#L388'>388</a>
+<a name='L389'></a><a href='#L389'>389</a>
+<a name='L390'></a><a href='#L390'>390</a>
+<a name='L391'></a><a href='#L391'>391</a>
+<a name='L392'></a><a href='#L392'>392</a>
+<a name='L393'></a><a href='#L393'>393</a>
+<a name='L394'></a><a href='#L394'>394</a>
+<a name='L395'></a><a href='#L395'>395</a>
+<a name='L396'></a><a href='#L396'>396</a>
+<a name='L397'></a><a href='#L397'>397</a>
+<a name='L398'></a><a href='#L398'>398</a>
+<a name='L399'></a><a href='#L399'>399</a>
+<a name='L400'></a><a href='#L400'>400</a>
+<a name='L401'></a><a href='#L401'>401</a>
+<a name='L402'></a><a href='#L402'>402</a>
+<a name='L403'></a><a href='#L403'>403</a>
+<a name='L404'></a><a href='#L404'>404</a>
+<a name='L405'></a><a href='#L405'>405</a>
+<a name='L406'></a><a href='#L406'>406</a>
+<a name='L407'></a><a href='#L407'>407</a>
+<a name='L408'></a><a href='#L408'>408</a>
+<a name='L409'></a><a href='#L409'>409</a>
+<a name='L410'></a><a href='#L410'>410</a>
+<a name='L411'></a><a href='#L411'>411</a>
+<a name='L412'></a><a href='#L412'>412</a>
+<a name='L413'></a><a href='#L413'>413</a>
+<a name='L414'></a><a href='#L414'>414</a>
+<a name='L415'></a><a href='#L415'>415</a>
+<a name='L416'></a><a href='#L416'>416</a>
+<a name='L417'></a><a href='#L417'>417</a>
+<a name='L418'></a><a href='#L418'>418</a>
+<a name='L419'></a><a href='#L419'>419</a>
+<a name='L420'></a><a href='#L420'>420</a>
+<a name='L421'></a><a href='#L421'>421</a>
+<a name='L422'></a><a href='#L422'>422</a>
+<a name='L423'></a><a href='#L423'>423</a>
+<a name='L424'></a><a href='#L424'>424</a>
+<a name='L425'></a><a href='#L425'>425</a>
+<a name='L426'></a><a href='#L426'>426</a>
+<a name='L427'></a><a href='#L427'>427</a>
+<a name='L428'></a><a href='#L428'>428</a>
+<a name='L429'></a><a href='#L429'>429</a>
+<a name='L430'></a><a href='#L430'>430</a>
+<a name='L431'></a><a href='#L431'>431</a>
+<a name='L432'></a><a href='#L432'>432</a>
+<a name='L433'></a><a href='#L433'>433</a>
+<a name='L434'></a><a href='#L434'>434</a>
+<a name='L435'></a><a href='#L435'>435</a>
+<a name='L436'></a><a href='#L436'>436</a>
+<a name='L437'></a><a href='#L437'>437</a>
+<a name='L438'></a><a href='#L438'>438</a>
+<a name='L439'></a><a href='#L439'>439</a>
+<a name='L440'></a><a href='#L440'>440</a>
+<a name='L441'></a><a href='#L441'>441</a>
+<a name='L442'></a><a href='#L442'>442</a>
+<a name='L443'></a><a href='#L443'>443</a>
+<a name='L444'></a><a href='#L444'>444</a>
+<a name='L445'></a><a href='#L445'>445</a>
+<a name='L446'></a><a href='#L446'>446</a>
+<a name='L447'></a><a href='#L447'>447</a>
+<a name='L448'></a><a href='#L448'>448</a>
+<a name='L449'></a><a href='#L449'>449</a>
+<a name='L450'></a><a href='#L450'>450</a>
+<a name='L451'></a><a href='#L451'>451</a>
+<a name='L452'></a><a href='#L452'>452</a>
+<a name='L453'></a><a href='#L453'>453</a>
+<a name='L454'></a><a href='#L454'>454</a>
+<a name='L455'></a><a href='#L455'>455</a>
+<a name='L456'></a><a href='#L456'>456</a>
+<a name='L457'></a><a href='#L457'>457</a>
+<a name='L458'></a><a href='#L458'>458</a>
+<a name='L459'></a><a href='#L459'>459</a>
+<a name='L460'></a><a href='#L460'>460</a>
+<a name='L461'></a><a href='#L461'>461</a>
+<a name='L462'></a><a href='#L462'>462</a>
+<a name='L463'></a><a href='#L463'>463</a>
+<a name='L464'></a><a href='#L464'>464</a>
+<a name='L465'></a><a href='#L465'>465</a>
+<a name='L466'></a><a href='#L466'>466</a>
+<a name='L467'></a><a href='#L467'>467</a>
+<a name='L468'></a><a href='#L468'>468</a>
+<a name='L469'></a><a href='#L469'>469</a>
+<a name='L470'></a><a href='#L470'>470</a>
+<a name='L471'></a><a href='#L471'>471</a>
+<a name='L472'></a><a href='#L472'>472</a>
+<a name='L473'></a><a href='#L473'>473</a>
+<a name='L474'></a><a href='#L474'>474</a>
+<a name='L475'></a><a href='#L475'>475</a>
+<a name='L476'></a><a href='#L476'>476</a>
+<a name='L477'></a><a href='#L477'>477</a>
+<a name='L478'></a><a href='#L478'>478</a>
+<a name='L479'></a><a href='#L479'>479</a>
+<a name='L480'></a><a href='#L480'>480</a>
+<a name='L481'></a><a href='#L481'>481</a>
+<a name='L482'></a><a href='#L482'>482</a>
+<a name='L483'></a><a href='#L483'>483</a>
+<a name='L484'></a><a href='#L484'>484</a>
+<a name='L485'></a><a href='#L485'>485</a>
+<a name='L486'></a><a href='#L486'>486</a>
+<a name='L487'></a><a href='#L487'>487</a>
+<a name='L488'></a><a href='#L488'>488</a>
+<a name='L489'></a><a href='#L489'>489</a>
+<a name='L490'></a><a href='#L490'>490</a>
+<a name='L491'></a><a href='#L491'>491</a>
+<a name='L492'></a><a href='#L492'>492</a>
+<a name='L493'></a><a href='#L493'>493</a>
+<a name='L494'></a><a href='#L494'>494</a>
+<a name='L495'></a><a href='#L495'>495</a>
+<a name='L496'></a><a href='#L496'>496</a>
+<a name='L497'></a><a href='#L497'>497</a>
+<a name='L498'></a><a href='#L498'>498</a>
+<a name='L499'></a><a href='#L499'>499</a>
+<a name='L500'></a><a href='#L500'>500</a>
+<a name='L501'></a><a href='#L501'>501</a>
+<a name='L502'></a><a href='#L502'>502</a>
+<a name='L503'></a><a href='#L503'>503</a>
+<a name='L504'></a><a href='#L504'>504</a>
+<a name='L505'></a><a href='#L505'>505</a>
+<a name='L506'></a><a href='#L506'>506</a>
+<a name='L507'></a><a href='#L507'>507</a>
+<a name='L508'></a><a href='#L508'>508</a>
+<a name='L509'></a><a href='#L509'>509</a>
+<a name='L510'></a><a href='#L510'>510</a>
+<a name='L511'></a><a href='#L511'>511</a>
+<a name='L512'></a><a href='#L512'>512</a>
+<a name='L513'></a><a href='#L513'>513</a>
+<a name='L514'></a><a href='#L514'>514</a>
+<a name='L515'></a><a href='#L515'>515</a>
+<a name='L516'></a><a href='#L516'>516</a>
+<a name='L517'></a><a href='#L517'>517</a>
+<a name='L518'></a><a href='#L518'>518</a>
+<a name='L519'></a><a href='#L519'>519</a>
+<a name='L520'></a><a href='#L520'>520</a>
+<a name='L521'></a><a href='#L521'>521</a>
+<a name='L522'></a><a href='#L522'>522</a>
+<a name='L523'></a><a href='#L523'>523</a>
+<a name='L524'></a><a href='#L524'>524</a>
+<a name='L525'></a><a href='#L525'>525</a>
+<a name='L526'></a><a href='#L526'>526</a>
+<a name='L527'></a><a href='#L527'>527</a>
+<a name='L528'></a><a href='#L528'>528</a>
+<a name='L529'></a><a href='#L529'>529</a>
+<a name='L530'></a><a href='#L530'>530</a>
+<a name='L531'></a><a href='#L531'>531</a>
+<a name='L532'></a><a href='#L532'>532</a>
+<a name='L533'></a><a href='#L533'>533</a>
+<a name='L534'></a><a href='#L534'>534</a>
+<a name='L535'></a><a href='#L535'>535</a>
+<a name='L536'></a><a href='#L536'>536</a>
+<a name='L537'></a><a href='#L537'>537</a>
+<a name='L538'></a><a href='#L538'>538</a>
+<a name='L539'></a><a href='#L539'>539</a>
+<a name='L540'></a><a href='#L540'>540</a>
+<a name='L541'></a><a href='#L541'>541</a>
+<a name='L542'></a><a href='#L542'>542</a>
+<a name='L543'></a><a href='#L543'>543</a>
+<a name='L544'></a><a href='#L544'>544</a>
+<a name='L545'></a><a href='#L545'>545</a>
+<a name='L546'></a><a href='#L546'>546</a>
+<a name='L547'></a><a href='#L547'>547</a>
+<a name='L548'></a><a href='#L548'>548</a>
+<a name='L549'></a><a href='#L549'>549</a>
+<a name='L550'></a><a href='#L550'>550</a>
+<a name='L551'></a><a href='#L551'>551</a>
+<a name='L552'></a><a href='#L552'>552</a>
+<a name='L553'></a><a href='#L553'>553</a>
+<a name='L554'></a><a href='#L554'>554</a>
+<a name='L555'></a><a href='#L555'>555</a>
+<a name='L556'></a><a href='#L556'>556</a>
+<a name='L557'></a><a href='#L557'>557</a>
+<a name='L558'></a><a href='#L558'>558</a>
+<a name='L559'></a><a href='#L559'>559</a>
+<a name='L560'></a><a href='#L560'>560</a>
+<a name='L561'></a><a href='#L561'>561</a>
+<a name='L562'></a><a href='#L562'>562</a>
+<a name='L563'></a><a href='#L563'>563</a>
+<a name='L564'></a><a href='#L564'>564</a>
+<a name='L565'></a><a href='#L565'>565</a>
+<a name='L566'></a><a href='#L566'>566</a>
+<a name='L567'></a><a href='#L567'>567</a>
+<a name='L568'></a><a href='#L568'>568</a>
+<a name='L569'></a><a href='#L569'>569</a>
+<a name='L570'></a><a href='#L570'>570</a>
+<a name='L571'></a><a href='#L571'>571</a>
+<a name='L572'></a><a href='#L572'>572</a>
+<a name='L573'></a><a href='#L573'>573</a>
+<a name='L574'></a><a href='#L574'>574</a>
+<a name='L575'></a><a href='#L575'>575</a>
+<a name='L576'></a><a href='#L576'>576</a>
+<a name='L577'></a><a href='#L577'>577</a>
+<a name='L578'></a><a href='#L578'>578</a>
+<a name='L579'></a><a href='#L579'>579</a>
+<a name='L580'></a><a href='#L580'>580</a>
+<a name='L581'></a><a href='#L581'>581</a>
+<a name='L582'></a><a href='#L582'>582</a>
+<a name='L583'></a><a href='#L583'>583</a>
+<a name='L584'></a><a href='#L584'>584</a>
+<a name='L585'></a><a href='#L585'>585</a>
+<a name='L586'></a><a href='#L586'>586</a>
+<a name='L587'></a><a href='#L587'>587</a>
+<a name='L588'></a><a href='#L588'>588</a>
+<a name='L589'></a><a href='#L589'>589</a>
+<a name='L590'></a><a href='#L590'>590</a>
+<a name='L591'></a><a href='#L591'>591</a>
+<a name='L592'></a><a href='#L592'>592</a>
+<a name='L593'></a><a href='#L593'>593</a>
+<a name='L594'></a><a href='#L594'>594</a>
+<a name='L595'></a><a href='#L595'>595</a>
+<a name='L596'></a><a href='#L596'>596</a>
+<a name='L597'></a><a href='#L597'>597</a>
+<a name='L598'></a><a href='#L598'>598</a>
+<a name='L599'></a><a href='#L599'>599</a>
+<a name='L600'></a><a href='#L600'>600</a>
+<a name='L601'></a><a href='#L601'>601</a>
+<a name='L602'></a><a href='#L602'>602</a>
+<a name='L603'></a><a href='#L603'>603</a>
+<a name='L604'></a><a href='#L604'>604</a>
+<a name='L605'></a><a href='#L605'>605</a>
+<a name='L606'></a><a href='#L606'>606</a>
+<a name='L607'></a><a href='#L607'>607</a>
+<a name='L608'></a><a href='#L608'>608</a>
+<a name='L609'></a><a href='#L609'>609</a>
+<a name='L610'></a><a href='#L610'>610</a>
+<a name='L611'></a><a href='#L611'>611</a>
+<a name='L612'></a><a href='#L612'>612</a>
+<a name='L613'></a><a href='#L613'>613</a>
+<a name='L614'></a><a href='#L614'>614</a>
+<a name='L615'></a><a href='#L615'>615</a>
+<a name='L616'></a><a href='#L616'>616</a>
+<a name='L617'></a><a href='#L617'>617</a>
+<a name='L618'></a><a href='#L618'>618</a>
+<a name='L619'></a><a href='#L619'>619</a>
+<a name='L620'></a><a href='#L620'>620</a>
+<a name='L621'></a><a href='#L621'>621</a>
+<a name='L622'></a><a href='#L622'>622</a>
+<a name='L623'></a><a href='#L623'>623</a>
+<a name='L624'></a><a href='#L624'>624</a>
+<a name='L625'></a><a href='#L625'>625</a>
+<a name='L626'></a><a href='#L626'>626</a>
+<a name='L627'></a><a href='#L627'>627</a>
+<a name='L628'></a><a href='#L628'>628</a>
+<a name='L629'></a><a href='#L629'>629</a>
+<a name='L630'></a><a href='#L630'>630</a>
+<a name='L631'></a><a href='#L631'>631</a>
+<a name='L632'></a><a href='#L632'>632</a>
+<a name='L633'></a><a href='#L633'>633</a>
+<a name='L634'></a><a href='#L634'>634</a>
+<a name='L635'></a><a href='#L635'>635</a>
+<a name='L636'></a><a href='#L636'>636</a>
+<a name='L637'></a><a href='#L637'>637</a>
+<a name='L638'></a><a href='#L638'>638</a>
+<a name='L639'></a><a href='#L639'>639</a>
+<a name='L640'></a><a href='#L640'>640</a>
+<a name='L641'></a><a href='#L641'>641</a>
+<a name='L642'></a><a href='#L642'>642</a>
+<a name='L643'></a><a href='#L643'>643</a>
+<a name='L644'></a><a href='#L644'>644</a>
+<a name='L645'></a><a href='#L645'>645</a>
+<a name='L646'></a><a href='#L646'>646</a>
+<a name='L647'></a><a href='#L647'>647</a>
+<a name='L648'></a><a href='#L648'>648</a>
+<a name='L649'></a><a href='#L649'>649</a>
+<a name='L650'></a><a href='#L650'>650</a>
+<a name='L651'></a><a href='#L651'>651</a>
+<a name='L652'></a><a href='#L652'>652</a>
+<a name='L653'></a><a href='#L653'>653</a>
+<a name='L654'></a><a href='#L654'>654</a>
+<a name='L655'></a><a href='#L655'>655</a>
+<a name='L656'></a><a href='#L656'>656</a>
+<a name='L657'></a><a href='#L657'>657</a>
+<a name='L658'></a><a href='#L658'>658</a>
+<a name='L659'></a><a href='#L659'>659</a>
+<a name='L660'></a><a href='#L660'>660</a>
+<a name='L661'></a><a href='#L661'>661</a>
+<a name='L662'></a><a href='#L662'>662</a>
+<a name='L663'></a><a href='#L663'>663</a>
+<a name='L664'></a><a href='#L664'>664</a>
+<a name='L665'></a><a href='#L665'>665</a>
+<a name='L666'></a><a href='#L666'>666</a>
+<a name='L667'></a><a href='#L667'>667</a>
+<a name='L668'></a><a href='#L668'>668</a>
+<a name='L669'></a><a href='#L669'>669</a>
+<a name='L670'></a><a href='#L670'>670</a>
+<a name='L671'></a><a href='#L671'>671</a>
+<a name='L672'></a><a href='#L672'>672</a>
+<a name='L673'></a><a href='#L673'>673</a>
+<a name='L674'></a><a href='#L674'>674</a>
+<a name='L675'></a><a href='#L675'>675</a>
+<a name='L676'></a><a href='#L676'>676</a>
+<a name='L677'></a><a href='#L677'>677</a>
+<a name='L678'></a><a href='#L678'>678</a>
+<a name='L679'></a><a href='#L679'>679</a>
+<a name='L680'></a><a href='#L680'>680</a>
+<a name='L681'></a><a href='#L681'>681</a>
+<a name='L682'></a><a href='#L682'>682</a>
+<a name='L683'></a><a href='#L683'>683</a>
+<a name='L684'></a><a href='#L684'>684</a>
+<a name='L685'></a><a href='#L685'>685</a>
+<a name='L686'></a><a href='#L686'>686</a>
+<a name='L687'></a><a href='#L687'>687</a>
+<a name='L688'></a><a href='#L688'>688</a>
+<a name='L689'></a><a href='#L689'>689</a>
+<a name='L690'></a><a href='#L690'>690</a>
+<a name='L691'></a><a href='#L691'>691</a>
+<a name='L692'></a><a href='#L692'>692</a>
+<a name='L693'></a><a href='#L693'>693</a>
+<a name='L694'></a><a href='#L694'>694</a>
+<a name='L695'></a><a href='#L695'>695</a>
+<a name='L696'></a><a href='#L696'>696</a>
+<a name='L697'></a><a href='#L697'>697</a>
+<a name='L698'></a><a href='#L698'>698</a>
+<a name='L699'></a><a href='#L699'>699</a>
+<a name='L700'></a><a href='#L700'>700</a>
+<a name='L701'></a><a href='#L701'>701</a>
+<a name='L702'></a><a href='#L702'>702</a>
+<a name='L703'></a><a href='#L703'>703</a>
+<a name='L704'></a><a href='#L704'>704</a>
+<a name='L705'></a><a href='#L705'>705</a>
+<a name='L706'></a><a href='#L706'>706</a>
+<a name='L707'></a><a href='#L707'>707</a>
+<a name='L708'></a><a href='#L708'>708</a>
+<a name='L709'></a><a href='#L709'>709</a>
+<a name='L710'></a><a href='#L710'>710</a>
+<a name='L711'></a><a href='#L711'>711</a>
+<a name='L712'></a><a href='#L712'>712</a>
+<a name='L713'></a><a href='#L713'>713</a>
+<a name='L714'></a><a href='#L714'>714</a>
+<a name='L715'></a><a href='#L715'>715</a>
+<a name='L716'></a><a href='#L716'>716</a>
+<a name='L717'></a><a href='#L717'>717</a>
+<a name='L718'></a><a href='#L718'>718</a>
+<a name='L719'></a><a href='#L719'>719</a>
+<a name='L720'></a><a href='#L720'>720</a>
+<a name='L721'></a><a href='#L721'>721</a>
+<a name='L722'></a><a href='#L722'>722</a>
+<a name='L723'></a><a href='#L723'>723</a>
+<a name='L724'></a><a href='#L724'>724</a>
+<a name='L725'></a><a href='#L725'>725</a>
+<a name='L726'></a><a href='#L726'>726</a>
+<a name='L727'></a><a href='#L727'>727</a>
+<a name='L728'></a><a href='#L728'>728</a>
+<a name='L729'></a><a href='#L729'>729</a>
+<a name='L730'></a><a href='#L730'>730</a>
+<a name='L731'></a><a href='#L731'>731</a>
+<a name='L732'></a><a href='#L732'>732</a>
+<a name='L733'></a><a href='#L733'>733</a>
+<a name='L734'></a><a href='#L734'>734</a>
+<a name='L735'></a><a href='#L735'>735</a>
+<a name='L736'></a><a href='#L736'>736</a>
+<a name='L737'></a><a href='#L737'>737</a>
+<a name='L738'></a><a href='#L738'>738</a>
+<a name='L739'></a><a href='#L739'>739</a>
+<a name='L740'></a><a href='#L740'>740</a>
+<a name='L741'></a><a href='#L741'>741</a>
+<a name='L742'></a><a href='#L742'>742</a>
+<a name='L743'></a><a href='#L743'>743</a>
+<a name='L744'></a><a href='#L744'>744</a>
+<a name='L745'></a><a href='#L745'>745</a>
+<a name='L746'></a><a href='#L746'>746</a>
+<a name='L747'></a><a href='#L747'>747</a>
+<a name='L748'></a><a href='#L748'>748</a>
+<a name='L749'></a><a href='#L749'>749</a>
+<a name='L750'></a><a href='#L750'>750</a>
+<a name='L751'></a><a href='#L751'>751</a>
+<a name='L752'></a><a href='#L752'>752</a>
+<a name='L753'></a><a href='#L753'>753</a>
+<a name='L754'></a><a href='#L754'>754</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState, useEffect } from 'react';
+// 1. Добавляем useNavigate в импорт
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+&nbsp;
+const LegalLawPage = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> accentColor, oceanColor, user }) =&gt; {</span>
+  const navigate = <span class="cstat-no" title="statement not covered" >useNavigate();</span>
+  const location = <span class="cstat-no" title="statement not covered" >useLocation();</span>
+&nbsp;
+  // Проверяем, есть ли юзер и не находимся ли мы уже на странице /flights
+  const isLogoClickable = <span class="cstat-no" title="statement not covered" >user &amp;&amp; location.pathname !== '/flights';</span>
+&nbsp;
+  const handleLogoClick = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (isLogoClickable) {</span>
+<span class="cstat-no" title="statement not covered" >      navigate('/flights'); </span>
+    }
+  };
+&nbsp;
+  const [activeTab, setActiveTab] = <span class="cstat-no" title="statement not covered" >useState('terms');</span>
+  
+  const [language, setLanguage] = <span class="cstat-no" title="statement not covered" >useState('en');</span> // по умолчанию английский
+&nbsp;
+  const glassCardClass = <span class="cstat-no" title="statement not covered" >"bg-white/45 backdrop-blur-md p-6 rounded-[32px] border border-white/60 shadow-sm hover:shadow-md transition-all duration-300";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    const params = <span class="cstat-no" title="statement not covered" >new URLSearchParams(location.search);</span>
+    const tab = <span class="cstat-no" title="statement not covered" >params.get('tab');</span>
+<span class="cstat-no" title="statement not covered" >    if (tab === 'privacy') <span class="cstat-no" title="statement not covered" >setActiveTab('privacy');</span></span>
+<span class="cstat-no" title="statement not covered" >    if (tab === 'terms') <span class="cstat-no" title="statement not covered" >setActiveTab('terms');</span></span>
+  }, [location]);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;div className="min-h-screen w-full flex flex-col font-sans overflow-x-hidden relative"&gt;
+      
+      {/* BACKGROUND */}
+      &lt;div className="fixed inset-0 z-0 pointer-events-none" style={{ background: 'linear-gradient(180deg, #A7E9F5 0%, #E0F7FA 100%)' }}&gt;
+        &lt;div className="cloud cloud-1 opacity-50"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&nbsp;
+      {/* HEADER */}
+&lt;header className="header-adaptive-padding animate-drop-down relative z-30 w-full flex justify-between items-center bg-white/40 backdrop-blur-md border-b border-white/20"&gt;
+  
+  {/* ВОТ ЗДЕСЬ ДОБАВЛЕН onClick И ДИНАМИЧЕСКИЙ КЛАСС ДЛЯ КУРСОРА */}
+  &lt;div 
+    onClick={handleLogoClick} 
+    className={`flex items-center gap-3 select-none group w-max ${isLogoClickable ? 'cursor-pointer' : 'cursor-default'}`}
+  &gt;
+    &lt;div className="relative flex items-center justify-center transition-transform duration-700 group-hover:rotate-[45deg]" style={{ width: '34px', height: '34px' }}&gt;
+      &lt;div className="absolute inset-0 border-[2.5px] border-[#0A4A5E] rounded-full"&gt;&lt;/div&gt;
+      &lt;svg width="32" height="32" viewBox="0 0 24 24" fill="none"&gt;
+        {/* Горизонтальная линия (белая) */}
+        &lt;path d="M2 12L12 14.5L22 12L12 9.5L2 12Z" fill="white" fillOpacity="0.8" /&gt;
+        {/* Вертикальная стрелка (акцентный цвет) */}
+        &lt;path d="M12 2L14.5 12L12 22L9.5 12L12 2Z" fill={accentColor} /&gt;
+        {/* Центр компаса */}
+        &lt;circle cx="12" cy="12" r="2" fill={oceanColor} /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;span style={{ color: oceanColor, fontSize: '28px', fontFamily: "'DM Serif Display', serif" }}&gt;Askyinde&lt;/span&gt;
+  &lt;/div&gt;
+&nbsp;
+        &lt;nav className="flex items-center gap-8"&gt;
+          {user?.email ? (
+            &lt;&gt;
+              &lt;Link to="/flights" className="no-underline btn-bold-sora text-[14px]" style={{ color: oceanColor }}&gt;Flights&lt;/Link&gt;
+              &lt;Link to="/profile" className="w-10 h-10 rounded-full bg-white/50 flex items-center justify-center border border-white/40 no-underline"&gt;
+                &lt;span style={{ color: oceanColor, fontWeight: 'bold' }}&gt;{user.email.charAt(0).toUpperCase()}&lt;/span&gt;
+              &lt;/Link&gt;
+            &lt;/&gt;
+          ) : (
+            &lt;Link to="/" className="no-underline btn-bold-sora text-[14px] px-5 py-2 bg-white/50 rounded-2xl border border-white/40" style={{ color: oceanColor }}&gt;Back to Login&lt;/Link&gt;
+          )}
+        &lt;/nav&gt;
+      &lt;/header&gt;
+&nbsp;
+      {/* MAIN */}
+      &lt;main className="animate-rise-up flex-1 relative z-20 flex flex-col items-center py-16 px-6"&gt;
+        &lt;div className="w-full max-w-[1000px]"&gt;
+          
+          {/* TABS CONTROLLER с эффектом скользящего тумблера */}
+&lt;div className="relative flex gap-2 mb-10 p-1.5 bg-white/30 backdrop-blur-md rounded-[24px] border border-white/40 w-fit mx-auto shadow-sm overflow-hidden"&gt;
+  
+  {/* Бегунок (тот самый тумблер) */}
+  &lt;div 
+    className="absolute top-1.5 bottom-1.5 left-1.5 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] bg-white rounded-[20px] shadow-sm"
+    style={{ 
+      /* Ширина бегунка чуть меньше половины (с учетом gap и padding) */
+      width: 'calc(50% - 10px)',
+      /* Перемещение бегунка в зависимости от активной вкладки */
+      transform: activeTab === 'terms' ? 'translateX(0)' : 'translateX(100%)',
+      /* Дополнительный сдвиг для точности при переезде вправо */
+      marginLeft: activeTab === 'privacy' ? '8px' : '0'
+    }}
+  /&gt;
+&nbsp;
+  &lt;button 
+    onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >      setActiveTab('terms');</span>
+<span class="cstat-no" title="statement not covered" >      navigate('/legal?tab=terms');</span>
+    }}
+    className="relative z-10 px-10 py-3 rounded-[18px] transition-opacity duration-300 btn-bold-sora text-[15px] font-bold"
+    style={{ 
+      color: oceanColor, 
+      opacity: activeTab === 'terms' ? 1 : 0.6 
+    }}
+  &gt;
+    Terms of Service
+  &lt;/button&gt;
+&nbsp;
+  &lt;button 
+    onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >      setActiveTab('privacy');</span>
+<span class="cstat-no" title="statement not covered" >      navigate('/legal?tab=privacy');</span>
+    }}
+    className="relative z-10 px-10 py-3 rounded-[18px] transition-opacity duration-300 btn-bold-sora text-[15px] font-bold"
+    style={{ 
+      color: oceanColor, 
+      opacity: activeTab === 'privacy' ? 1 : 0.6 
+    }}
+  &gt;
+    Privacy Policy
+  &lt;/button&gt;
+&lt;/div&gt;
+&nbsp;
+          {/* DOCUMENT CONTENT */}
+          {/* DOCUMENT CONTENT — карточка теперь подстраивается под высоту текста */}
+&lt;div className="p-12 bg-white/60 backdrop-blur-md rounded-[48px] border border-white/60 shadow-2xl text-left transition-all duration-500 w-full max-w-[1000px] mx-auto"&gt;
+  
+  {/* Language Switcher */}
+  &lt;div className="flex justify-end mb-10"&gt;
+    &lt;div className="relative flex p-1 bg-white/20 backdrop-blur-sm rounded-xl border border-white/30 w-fit shadow-inner"&gt;
+      &lt;div 
+        className="absolute top-1 bottom-1 left-1 transition-all duration-300 ease-out bg-white/80 rounded-lg shadow-sm"
+        style={{ 
+          width: '45px',
+          transform: language === 'en' ? 'translateX(0)' : 'translateX(49px)'
+        }}
+      /&gt;
+      &lt;button 
+        onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >setLanguage('en')}</span>
+        className={`relative z-10 w-11 h-8 flex items-center justify-center text-[12px] font-bold transition-colors ${language === 'en' ? 'text-[#0A4A5E]' : 'opacity-40'}`}
+      &gt;
+        EN
+      &lt;/button&gt;
+      &lt;button 
+        onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >setLanguage('kz')}</span>
+        className={`relative z-10 w-11 h-8 flex items-center justify-center text-[12px] font-bold transition-colors ${language === 'kz' ? 'text-[#0A4A5E]' : 'opacity-40'}`}
+      &gt;
+        KZ
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&nbsp;
+  &lt;div key={`${activeTab}-${language}`} className="animate-in fade-in slide-in-from-bottom-3 duration-700 ease-out"&gt;
+    
+    {activeTab === 'terms' ? (
+      // --- TERMS OF SERVICE ---
+      &lt;div className="space-y-8 hero-description text-[15px] leading-[1.8]" style={{ color: oceanColor }}&gt;
+        &lt;p className="opacity-50 text-[12px] mb-2"&gt;{language === 'en' ? 'Last Updated: April 2026' : 'Соңғы жаңарту: Сәуір 2026'}&lt;/p&gt;
+        &lt;h2 
+  className="text-[36px] mb-10" 
+  style={{ 
+    color: oceanColor, 
+    fontFamily: "'DM Serif Display', serif",
+    // Применяем аналогичный баланс веса: 500 для латиницы и 700 для кириллицы
+    fontWeight: language === 'en' ? 500 : 700 
+  }}
+&gt;
+  {language === 'en' ? 'Terms of Service' : 'Пайдалану шарттары'}
+&lt;/h2&gt;
+        
+        &lt;section className={glassCardClass}&gt;
+          &lt;h3 className="text-[20px] font-bold mb-4"&gt;{language === 'en' ? '1. Who are we?' : '1. Біз кімбіз?'}&lt;/h3&gt;
+          &lt;p className="opacity-95"&gt;
+            {language === 'en' 
+              ? 'Askyinde ("we", "Our" or "US") provides online search services (including air ticket price comparison) and other accompanying travel services (hereinafter "services") to travelers around the world through our website and other interfaces (hereinafter "platforms"). Askyinde is not a travel agency and is not responsible for pricing, monitoring or offering any travel options or products that you find and book through our services ("Third party products").' 
+              : 'Askyinde («біз», «біздің» немесе «бізді») біздің веб-сайтымыз және басқа интерфейстер (бұдан әрі — «Платформалар») арқылы бүкіл әлем бойынша саяхатшыларға онлайн іздеу қызметтерін (соның ішінде әуе билеттерінің бағасын салыстыру) және басқа да ілеспе туристік қызметтерді ұсынады. Askyinde туристік агенттік болып табылмайды және біздің Қызметтеріміз арқылы табатын кез келген сапар нұсқаларына немесе өнімдеріне баға белгілеуге жауапты емес.'}
+          &lt;/p&gt;
+        &lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '1.1. Introduction' : '1.1. Кіріспе бөлігі'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95"&gt;
+    {language === 'en' 
+      ? &lt;&gt;
+          Askyinde is a partner-based aviation booking platform operating as an intermediary technology system that connects passengers with airline carriers and third-party travel service providers. The platform does not function as an airline operator and does not own, manage, or control aircraft, flight operations, or aviation services. Its role is strictly limited to providing a digital infrastructure for search, booking, and transaction coordination across multiple partners.
+          &lt;br /&gt;&lt;br /&gt;
+          By using Askyinde, users acknowledge that the platform serves only as a facilitator of travel-related services. All flight operations, schedules, and transport responsibilities are fully handled by independent airline partners, while Askyinde ensures the technological environment for efficient interaction between users and providers.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde-жолаушыларды авиакомпаниялармен және үшінші тарап туристік провайдерлерімен байланыстыратын делдалдық технологиялық жүйе ретінде жұмыс істейтін серіктес авиациялық брондау платформасы. Платформа авиакомпания операторы ретінде жұмыс істемейді және әуе кемелеріне, ұшу операцияларына немесе авиациялық қызметтерге иелік етпейді, басқармайды немесе басқармайды. Оның рөлі бірнеше серіктестер арасында іздеу, брондау және транзакцияларды үйлестіру үшін цифрлық инфрақұрылымды қамтамасыз етумен қатаң шектеледі.
+          &lt;br /&gt;&lt;br /&gt;
+          Askyinde-ді қолдана отырып, пайдаланушылар платформа тек саяхатқа байланысты қызметтердің фасилитаторы ретінде қызмет ететінін мойындайды. Барлық рейстерді, кестелерді және көлік міндеттерін авиакомпанияның тәуелсіз серіктестері толығымен орындайды, АЛ Askyinde пайдаланушылар мен жеткізушілер арасындағы тиімді өзара әрекеттесу үшін технологиялық ортаны қамтамасыз етеді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '2. Services Overview' : '2. Біз кімбіз?'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95"&gt;
+    {language === 'en' 
+      ? &lt;&gt;
+          Askyinde provides a comprehensive flight search system that aggregates available routes, prices, and schedules from multiple airline partners into a unified interface. Users can compare flight options, select preferred routes, and initiate booking requests through an integrated system designed to simplify travel planning and ticket acquisition.
+          &lt;br /&gt;&lt;br /&gt;
+          Once a booking request is submitted, ticket issuance, seat confirmation, baggage rules, and flight execution are managed exclusively by airline partners. Askyinde does not alter or guarantee flight availability but acts as a communication bridge between users and carriers. The platform also supports automated coordination of booking data, ensuring that user requests are transmitted securely and efficiently to relevant service providers.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde авиакомпанияның бірнеше серіктестерінің қол жетімді маршруттарын, бағалары мен кестелерін бірыңғай интерфейске біріктіретін рейстерді іздеудің кешенді жүйесін ұсынады. Пайдаланушылар ұшу опцияларын салыстыра алады, қалаған маршруттарды таңдай алады және саяхатты жоспарлауды және билеттерді сатып алуды жеңілдетуге арналған біріктірілген жүйе арқылы брондау сұрауларын бастай алады.
+          &lt;br /&gt;&lt;br /&gt;
+          Брондау туралы өтініш берілгеннен кейін билеттерді беру, орындарды растау, багаж ережелерін сақтау және рейстерді орындауды тек авиакомпания серіктестері жүзеге асырады. Askyinde рейстердің қолжетімділігін өзгертпейді немесе кепілдік бермейді, бірақ пайдаланушылар мен тасымалдаушылар арасындағы байланыс көпірі ретінде әрекет етеді. Платформа сонымен қатар брондау деректерін автоматтандырылған үйлестіруді қолдайды, бұл пайдаланушы сұрауларының тиісті қызмет провайдерлеріне қауіпсіз және тиімді жіберілуін қамтамасыз етеді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+&lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '3. Pricing &amp; IATA-Inspired Logic' : '3. Баға Және IATA Шабыттандырған Логика'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95"&gt;
+    {language === 'en' 
+      ? &lt;&gt;
+          Askyinde applies a dynamic pricing structure that reflects real-time airline availability, demand fluctuations, seasonal changes, and carrier-specific fare rules. Ticket prices displayed on the platform may vary continuously depending on seat inventory, booking timing, and external market conditions determined by airline partners.
+          &lt;br /&gt;&lt;br /&gt;
+          Certain pricing structures and ticket-related charges may follow industry practices associated with airline and IATA fare systems. Taxes, airport fees, and additional surcharges are determined by airlines, airports, and applicable aviation authorities. The IATA-inspired pricing logic is used strictly as an industry reference model to ensure realism and consistency within the booking environment, and it does not represent a legal or regulatory dependency on IATA itself.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde авиакомпаниялардың нақты уақыттағы қолжетімділігін, сұраныстың ауытқуын, маусымдық өзгерістерді және тасымалдаушыға тән тариф ережелерін көрсететін динамикалық баға құрылымын қолданады. Платформада көрсетілетін билеттердің бағасы орындардың тізімдемесіне, брондау мерзіміне және авиакомпания серіктестері анықтаған сыртқы нарық жағдайларына байланысты үнемі өзгеріп отыруы мүмкін.
+          &lt;br /&gt;&lt;br /&gt;
+          Билеттерге байланысты белгілі бір баға құрылымдары мен алымдар авиакомпаниялар мен IATA тарифтік жүйелеріне қатысты салалық тәжірибеге сәйкес келуі мүмкін. Салықтарды, әуежай төлемдерін және қосымша төлемдерді авиакомпаниялар, әуежайлар және қолданыстағы авиация органдары анықтайды. IATA шабыттандырған баға логикасы брондау ортасында шынайылық пен дәйектілікті қамтамасыз ету үшін салалық анықтамалық үлгі ретінде қатаң түрде пайдаланылады және ОЛ IATA-ның өзіне заңды немесе реттеуші тәуелділікті білдірмейді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt; 
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '4. Payments &amp; Security' : '4. Төлемдер &amp; Қауіпсіздік'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95"&gt;
+    {language === 'en' 
+      ? &lt;&gt;
+          All payments within Askyinde are processed exclusively through external payment service providers that comply with PCI DSS-inspired security standards. The platform does not directly handle or store full card details, banking credentials, or sensitive authentication data on its internal systems. Instead, encrypted payment gateways and tokenization methods are used to ensure that financial information is securely transmitted and processed by certified third-party processors.
+          &lt;br /&gt;&lt;br /&gt;
+          Fraud prevention, transaction validation, and risk monitoring are handled through integrated security mechanisms provided by payment partners. These systems may include real-time fraud detection, encryption protocols, and authorization checks to protect users from unauthorized activity. ASKYINDE acts only as a technical interface between the user and payment provider, ensuring secure routing of transaction data without retaining sensitive financial information.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde авиакомпаниялардың нақты уақыттағы қолжетімділігін, сұраныстың ауытқуын, маусымдық өзгерістерді және тасымалдаушыға тән тариф ережелерін көрсететін динамикалық баға құрылымын қолданады. Платформада көрсетілетін билеттердің бағасы орындардың тізімдемесіне, брондау мерзіміне және авиакомпания серіктестері анықтаған сыртқы нарық жағдайларына байланысты үнемі өзгеріп отыруы мүмкін.
+          &lt;br /&gt;&lt;br /&gt;
+          Билеттерге байланысты белгілі бір баға құрылымдары мен алымдар авиакомпаниялар мен IATA тарифтік жүйелеріне қатысты салалық тәжірибеге сәйкес келуі мүмкін. Салықтарды, әуежай төлемдерін және қосымша төлемдерді авиакомпаниялар, әуежайлар және қолданыстағы авиация органдары анықтайды. IATA шабыттандырған баға логикасы брондау ортасында шынайылық пен дәйектілікті қамтамасыз ету үшін салалық анықтамалық үлгі ретінде қатаң түрде пайдаланылады және ОЛ IATA-ның өзіне заңды немесе реттеуші тәуелділікті білдірмейді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+        &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '5. User Responsibility' : '5. Пайдаланушының жауапкершілігі'}
+  &lt;/h3&gt;
+  &lt;p className="mb-4"&gt;
+    {language === 'en' 
+      ? 'Users are fully responsible for the accuracy of all personal, travel, and payment information provided during booking and account creation. Any incorrect data may affect booking confirmation, ticket issuance, or travel validity. Users must ensure that their account credentials remain confidential and secure at all times to prevent unauthorized access.'
+      : 'Пайдаланушылар брондау және есептік жазбаны құру кезінде берілген барлық жеке, жол жүру және төлем ақпаратының дұрыстығына толық жауап береді. Кез келген қате деректер брондауды растауға, билет беруге немесе сапардың жарамдылығына әсер етуі мүмкін. Пайдаланушылар рұқсатсыз кіруді болдырмау үшін есептік жазбасының тіркелгі деректерінің әрқашан құпия және қауіпсіз болуын қамтамасыз етуі керек.'}
+  &lt;/p&gt;
+  &lt;p className="mb-4 font-bold"&gt;
+    {language === 'en' ? 'User responsibilities include:' : 'Пайдаланушының міндеттері:'}
+  &lt;/p&gt;
+  &lt;ul className="list-disc pl-6 space-y-3 opacity-95 mb-4"&gt;
+    {language === 'en' ? (
+      &lt;&gt;
+        &lt;li&gt;Providing accurate passenger and booking information&lt;/li&gt;
+        &lt;li&gt;Maintaining secure login credentials and account access&lt;/li&gt;
+        &lt;li&gt;Using the platform only for lawful travel and booking purposes&lt;/li&gt;
+        &lt;li&gt;Ensuring payment details entered via external gateways are correct and valid&lt;/li&gt;
+      &lt;/&gt;
+    ) : (
+      &lt;&gt;
+        &lt;li&gt;Жолаушылар мен брондау туралы дұрыс ақпарат беру&lt;/li&gt;
+        &lt;li&gt;Кіру деректері мен тіркелуге қауіпсіз қол жеткізуді қамтамасыз ету&lt;/li&gt;
+        &lt;li&gt;Платформаны тек заңды саяхат және брондау мақсаттарында пайдалану&lt;/li&gt;
+        &lt;li&gt;Сыртқы шлюздер арқылы енгізілген төлем деректемелерінің дұрыстығын және жарамдылығын қамтамасыз ету&lt;/li&gt;
+      &lt;/&gt;
+    )}
+  &lt;/ul&gt;
+  &lt;p&gt;
+    {language === 'en'
+      ? 'Users are also responsible for reviewing airline-specific rules, including baggage policies, cancellation conditions, and travel requirements, as these are defined by partner carriers and not controlled by Askyinde.'
+      : 'Сондай-ақ, пайдаланушылар авиакомпанияларға қатысты ережелерді, соның ішінде багаж ережелерін, рейстерді тоқтату шарттарын және жол жүру талаптарын қайта қарауға жауапты, өйткені оларды серіктес тасымалдаушылар анықтайды және Askyinde бақыламайды.'}
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '6. Liability &amp; Limitations' : '6. Жауапкершілік &amp; шектеулер'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Askyinde operates strictly as a technology intermediary and does not act as an airline, carrier, or transportation provider. As such, the platform is not responsible for flight operations, delays, cancellations, schedule changes, or service disruptions caused by airline partners or external factors.
+          &lt;br /&gt;&lt;br /&gt;
+          Liability is limited to the technical functionality of the booking platform and its ability to transmit user requests to relevant service providers. Askyinde cannot guarantee uninterrupted availability of third-party airline or payment services.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde қатаң түрде технологиялық делдал ретінде жұмыс істейді және авиакомпания, тасымалдаушы немесе тасымалдаушы ретінде әрекет етпейді. Осылайша, платформа рейстердің орындалуына, рейстердің кешігуіне, тоқтатылуына, кестедегі өзгерістерге немесе авиакомпания серіктестері немесе сыртқы факторлар тудырған қызмет көрсетудегі үзілістерге жауапты емес.
+          &lt;br /&gt;&lt;br /&gt;
+          Жауапкершілік брондау платформасының техникалық функционалдылығымен және оның пайдаланушылардың сұраныстарын тиісті қызмет көрсетушілерге жіберу мүмкіндігімен шектеледі. Askyinde үшінші тарап авиакомпаниясының немесе төлем қызметтерінің үздіксіз қолжетімділігіне кепілдік бере алмайды.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;p className="font-bold mb-4"&gt;
+    {language === 'en' ? 'Key limitations include:' : 'Негізгі шектеулер:'}
+  &lt;/p&gt;
+  &lt;ul className="list-disc pl-6 space-y-3 opacity-95"&gt;
+    {language === 'en' ? (
+      &lt;&gt;
+        &lt;li&gt;No responsibility for airline operational performance or disruptions&lt;/li&gt;
+        &lt;li&gt;No liability for pricing changes imposed by third-party carriers&lt;/li&gt;
+        &lt;li&gt;Limited responsibility for errors originating from external service providers&lt;/li&gt;
+        &lt;li&gt;Platform acts solely as an intermediary booking and data transmission system&lt;/li&gt;
+      &lt;/&gt;
+    ) : (
+      &lt;&gt;
+        &lt;li&gt;Әуе компанияларының жұмысына жауапкершілік жоқ&lt;/li&gt;
+        &lt;li&gt;Үшінші тарап тасымалдаушылардың баға өзгерістері үшін жауапкершілік жоқ&lt;/li&gt;
+        &lt;li&gt;Сыртқы қызмет провайдерлерінің қателері үшін шектеулі жауапкершілік&lt;/li&gt;
+        &lt;li&gt;Платформа тек делдалдық брондау жүйесі ретінде жұмыс істейді&lt;/li&gt;
+      &lt;/&gt;
+    )}
+  &lt;/ul&gt;
+&lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt;
+          &lt;h3 className="text-[20px] font-bold mb-4"&gt;{language === 'en' ? '7. These Terms' : '7. Осы Шарттар'}&lt;/h3&gt;
+          &lt;p className="opacity-95"&gt;
+            {language === 'en'
+              ? 'These terms ("Terms"), along with our Privacy Policy, govern your access to and use of our services and platforms. By using the platform, you confirm that you have read and agree to these terms in full. We may change these terms at any time at our discretion.'
+              : 'Осы ережелер («Шарттар») біздің құпиялылық саясатымызбен бірге біздің Қызметтеріміз бен Платформаларымызға кіруіңізді және оларды пайдалануыңызды реттейді. Платформаны пайдалана отырып, сіз осы Шарттарды толық оқып шыққаныңызды және олармен келісетініңізді растайсыз.'}
+          &lt;/p&gt;
+        &lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt;
+          &lt;h3 className="text-[20px] font-bold mb-4"&gt;{language === 'en' ? '8. Use of our services' : '8. Қызметтерімізді пайдалану'}&lt;/h3&gt;
+          &lt;p className="mb-4"&gt;{language === 'en' ? 'You may use our services only for legal purposes. You undertake not to:' : 'Сіз біздің Қызметтерімізді тек заңды мақсаттарда пайдалана аласыз. Келесі әрекеттерді орындамауға міндеттенесіз:'}&lt;/p&gt;
+          &lt;ul className="list-decimal pl-6 space-y-3 opacity-95"&gt;
+            {language === 'en' ? (
+              &lt;&gt;
+                &lt;li&gt;Use the platform to distribute any illegal, harmful or offensive content;&lt;/li&gt;
+                &lt;li&gt;Copy software, extract its source code, or attempt to hack security systems;&lt;/li&gt;
+                &lt;li&gt;Use automated systems (bots, spiders) to collect data or index content;&lt;/li&gt;
+                &lt;li&gt;Make false statements about contact with the Askyinde administration;&lt;/li&gt;
+                &lt;li&gt;Remove or modify any copyright notices, logos or trademarks.&lt;/li&gt;
+              &lt;/&gt;
+            ) : (
+              &lt;&gt;
+                &lt;li&gt;Платформаны кез келген заңсыз, зиянды немесе қорлаушы мазмұнды тарату үшін пайдалану;&lt;/li&gt;
+                &lt;li&gt;Бағдарламалық жасақтаманы көшіру, бастапқы кодын алу немесе қауіпсіздік жүйелерін бұзу;&lt;/li&gt;
+                &lt;li&gt;Деректерді жинау немесе индекстеу үшін автоматтандырылған жүйелерді пайдалану;&lt;/li&gt;
+                &lt;li&gt;Askyinde әкімшілігімен байланысыңыз бар деп жалған мәлімдеме жасау;&lt;/li&gt;
+                &lt;li&gt;Авторлық құқық туралы ескертулерді, логотиптерді немесе тауар белгілерін жою.&lt;/li&gt;
+              &lt;/&gt;
+            )}
+          &lt;/ul&gt;
+        &lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt;
+          &lt;h3 className="text-[20px] font-bold mb-4"&gt;{language === 'en' ? '9. Intellectual property' : '9. Зияткерлік меншік'}&lt;/h3&gt;
+          &lt;p className="opacity-95"&gt;
+            {language === 'en'
+              ? 'All intellectual property rights, including interface design, software code, search algorithms, and the Askyinde trademark, belong to us or our licensors.'
+              : 'Зияткерлік меншікке қатысты барлық құқықтар, соның ішінде интерфейс дизайны, бағдарламалық код, іздеу алгоритмдері және Askyinde тауар белгісі бізге тиесілі.'}
+          &lt;/p&gt;
+        &lt;/section&gt;
+&nbsp;
+        &lt;section className="px-4"&gt;
+          &lt;h3 className="text-[20px] font-bold mb-4"&gt;{language === 'en' ? '10. Limitation of liability' : '10. Жауапкершілікті шектеу'}&lt;/h3&gt;
+          &lt;p className="opacity-95"&gt;
+            {language === 'en'
+              ? 'Our maximum total obligations to you are limited to the amount of damage that you have suffered for one reason or another from boarding to arrival, while larger costs are covered by our partner airlines in the event of such an event (equivalent in dollars $).'
+              : 'Біздің сіз алдындағы ең жоғары жалпы міндеттемелеріміз қонудан келгенге дейін қандай да бір себептермен келтірілген залалдың мөлшерімен шектеледі, ал мұндай оқиға болған жағдайда серіктес авиакомпанияларымыз үлкен шығындарды өтейді (долларындағы баламасы $).'}
+          &lt;/p&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    ) : (
+      /* --- PRIVACY POLICY CONTENT --- */
+      
+&lt;div className="space-y-6 text-[15px] leading-[1.8]" style={{ color: oceanColor }}&gt;
+  
+  &lt;p className="opacity-50 text-[12px] mb-2"&gt;
+    {language === 'en' ? 'Effective: April 2026' : 'Күшіне енуі: Сәуір 2026'}
+  &lt;/p&gt;
+  
+  &lt;h2 
+  className="text-[36px] mb-10" 
+  style={{ 
+    color: oceanColor, 
+    fontFamily: "'DM Serif Display', serif",
+    // Устанавливаем 500 для английского и 700 для казахского для визуального баланса
+    fontWeight: language === 'en' ? 500 : 700 
+  }}
+&gt;
+  {language === 'en' ? 'Privacy Policy' : 'Құпиялылық саясаты'}
+&lt;/h2&gt;
+&nbsp;
+  {/* Section 1: About - Выделенная карточка */}
+  &lt;section className={glassCardClass}&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '1. About this policy' : '1. Осы саясат туралы'}
+    &lt;/h3&gt;
+    &lt;p className="opacity-95"&gt;
+      {language === 'en' 
+        ? 'This policy describes how Askyinde collects and processes your personal data when you use our Platforms. We value your trust and ensure that your information is kept secure and confidential.' 
+        : 'Бұл саясат сіз біздің Платформаларымызды пайдаланған кезде Askyinde сіздің жеке деректеріңізді қалай жинайтынын және өңдейтінін сипаттайды. Біз сіздің сеніміңізді бағалаймыз және ақпаратыңыздың қауіпсіздігін қамтамасыз етеміз.'}
+    &lt;/p&gt;
+  &lt;/section&gt;
+&nbsp;
+  &lt;section className="px-4"&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '1.1. Introduction' : '1.1. Кіріспе бөлігі'}
+    &lt;/h3&gt;
+    &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Askyinde operates under a GDPR-inspired privacy framework designed to ensure transparent, secure, and responsible handling of user data within a partner-based aviation booking ecosystem. The platform functions as an intermediary technology system between passengers, airline carriers, and payment service providers, meaning it does not operate as an airline or independent travel authority.
+          &lt;br /&gt;&lt;br /&gt;
+          Personal data may be processed in accordance with GDPR-inspired data protection principles to enable booking functionality, account management, and coordination between multiple external partners. The purpose of this Privacy Policy is to clearly explain how information is collected, used, and protected within the Askyinde system, ensuring users understand how their data flows through the booking infrastructure.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde серіктес авиациялық брондау экожүйесінде пайдаланушы деректерінің ашық, қауіпсіз және жауапкершілікпен өңделуін қамтамасыз етуге арналған GDPR негізіндегі құпиялылық жүйесі арқылы жұмыс істейді. Платформа жолаушылар, әуе тасымалдаушылары және төлем қызметтерін жеткізушілер арасындағы делдалдық технологиялық жүйе ретінде жұмыс істейді, яғни ол авиакомпания немесе тәуелсіз туристік орган ретінде жұмыс істемейді.
+          &lt;br /&gt;&lt;br /&gt;
+          Жеке деректерді брондау функционалдығын, есептік жазбаны басқаруды және бірнеше сыртқы серіктестер арасындағы үйлестіруді қамтамасыз ету үшін GDPR шабыттандырған деректерді қорғау принциптеріне сәйкес өңдеуге болады. Бұл Құпиялылық Саясатының мақсаты-Askyinde жүйесінде ақпараттың қалай жиналатынын, пайдаланылатынын және қорғалатынын нақты түсіндіру, бұл пайдаланушыларға олардың деректерінің брондау инфрақұрылымы арқылы қалай өтетінін түсінуге мүмкіндік береді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;/section&gt;
+&nbsp;
+  {/* Section 2: Data Collection - Обычный текст */}
+  &lt;section className="px-4"&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '2. Data Collection' : '2. Деректерді жинау'}
+    &lt;/h3&gt;
+    &lt;p className="mb-4 opacity-90"&gt;
+      {language === 'en' 
+        ? '' 
+        : 'We collect information that you provide directly, such as:'}
+    &lt;/p&gt;
+    &lt;ul className="list-disc pl-6 space-y-3 opacity-95"&gt;
+      {language === 'en' ? (
+        &lt;&gt;
+          &lt;li&gt;&lt;strong&gt;Identity Data:&lt;/strong&gt; Name and email provided via Google authentication.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Search Data:&lt;/strong&gt; Travel dates, destinations, and preferences.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Technical Data:&lt;/strong&gt; IP address, browser type, and device information.&lt;/li&gt;
+        &lt;/&gt;
+      ) : (
+        &lt;&gt;
+          &lt;li&gt;&lt;strong&gt;Сәйкестендіру деректері:&lt;/strong&gt; Google аутентификациясы арқылы берілген аты-жөніңіз бен email.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Іздеу деректері:&lt;/strong&gt; Сапар күндері, бағыттар және таңдаулы баптаулар.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Техникалық деректер:&lt;/strong&gt; IP-мекенжайы, браузер түрі және құрылғы туралы ақпарат.&lt;/li&gt;
+        &lt;/&gt;
+      )}
+    &lt;/ul&gt;
+  &lt;/section&gt;
+&nbsp;
+  &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '3. Data Collection' : '3. Деректерді жинау'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Askyinde collects and processes only the data required for providing flight search, booking, and payment coordination services. This data is obtained directly from users during registration, booking, and system interaction, as well as automatically through platform usage.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde тек рейс іздеу, брондау және төлемді үйлестіру қызметтерін көрсету үшін қажетті деректерді жинайды және өңдейді. Бұл деректер тіркелу, брондау және жүйемен өзара әрекеттесу кезінде пайдаланушылардан тікелей алынады, сондай-ақ платформаны пайдалану арқылы автоматты түрде жиналады.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;p className="font-bold mb-4"&gt;
+    {language === 'en' ? 'Types of data collected include:' : 'Жиналатын деректер түрлері:'}
+  &lt;/p&gt;
+  &lt;ul className="list-disc pl-6 space-y-3 opacity-95 mb-4"&gt;
+    {language === 'en' ? (
+      &lt;&gt;
+        &lt;li&gt;Personal identification data (full name, contact details, nationality)&lt;/li&gt;
+        &lt;li&gt;Travel and booking data (routes, dates, passenger details, ticket information)&lt;/li&gt;
+        &lt;li&gt;Technical data (IP address, device type, browser information, system logs)&lt;/li&gt;
+        &lt;li&gt;Payment-related metadata (transaction references processed via external providers)&lt;/li&gt;
+      &lt;/&gt;
+    ) : (
+      &lt;&gt;
+        &lt;li&gt;Жеке сәйкестендіру деректері (толық аты-жөні, байланыс деректері, ұлты)&lt;/li&gt;
+        &lt;li&gt;Саяхат және брондау деректері (бағыттар, күндер, жолаушы деректері, билет ақпараты)&lt;/li&gt;
+        &lt;li&gt;Техникалық деректер (IP мекенжайы, құрылғы түрі, браузер ақпараты, жүйе журналдары)&lt;/li&gt;
+        &lt;li&gt;Төлемге қатысты метадеректер (сыртқы провайдерлер арқылы өңделген транзакция сілтемелері)&lt;/li&gt;
+      &lt;/&gt;
+    )}
+  &lt;/ul&gt;
+  &lt;p className="opacity-95"&gt;
+    {language === 'en'
+      ? 'In some cases, airline partners and payment providers may also transmit limited data back to Askyinde to confirm booking status or validate transactions. Sensitive financial information such as full card numbers or CVV codes is never stored directly on Askyinde systems and is handled exclusively by PCI DSS-inspired third-party processors.'
+      : 'Кейбір жағдайларда әуе серіктестері мен төлем провайдерлері брондау мәртебесін растау немесе транзакцияларды тексеру үшін Askyinde-ге шектеулі деректерді қайта жіберуі мүмкін. Толық карта нөмірлері немесе CVV кодтары сияқты құпия қаржылық ақпарат Askyinde жүйелерінде тікелей сақталмайды және тек PCI DSS үшінші тарап процессорлары тарапынан өңделеді.'
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+ &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '4. Purpose of Data Use' : '4. Деректерді Пайдалану мақсаты'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          The data collected by Askyinde is strictly used to support operational, technical, and security functions of the booking platform. It enables smooth interaction between users, airlines, and payment systems while maintaining service reliability and compliance with industry standards.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde жинаған деректер брондау платформасының операциялық, техникалық және қауіпсіздік функцияларын қолдау үшін қатаң түрде пайдаланылады. Бұл қызметтердің сенімділігі мен салалық стандарттарға сәйкестігін сақтай отырып, пайдаланушылар, авиакомпаниялар және төлем жүйелері арасындағы үздіксіз өзара әрекеттесуді қамтамасыз етеді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;p className="font-bold mb-4"&gt;
+    {language === 'en' ? 'Primary purposes of data usage include:' : 'Деректерді пайдаланудың негізгі мақсаттарына мыналар жатады:'}
+  &lt;/p&gt;
+  &lt;ul className="list-disc pl-6 space-y-3 opacity-95 mb-4"&gt;
+    {language === 'en' ? (
+      &lt;&gt;
+        &lt;li&gt;Processing flight bookings and managing reservation workflows&lt;/li&gt;
+        &lt;li&gt;Transmitting passenger and ticket data to airline partners for ticket issuance&lt;/li&gt;
+        &lt;li&gt;Facilitating secure payment transactions via external gateways&lt;/li&gt;
+        &lt;li&gt;Improving platform performance, usability, and system stability&lt;/li&gt;
+        &lt;li&gt;Supporting fraud detection, risk analysis, and security monitoring&lt;/li&gt;
+      &lt;/&gt;
+    ) : (
+      &lt;&gt;
+        &lt;li&gt;Рейстерді брондауды өңдеу және брондаудың жұмыс процестерін басқару&lt;/li&gt;
+        &lt;li&gt;Жолаушылар мен билеттер туралы мәліметтерді авиакомпания серіктестеріне билет беру үшін беру&lt;/li&gt;
+        &lt;li&gt;Сыртқы шлюздер арқылы қауіпсіз төлем операцияларын жеңілдету&lt;/li&gt;
+        &lt;li&gt;Платформаның өнімділігін, ыңғайлылығын және жүйенің тұрақтылығын жақсарту&lt;/li&gt;
+        &lt;li&gt;Алаяқтықты анықтауды, тәуекелдерді талдауды және қауіпсіздік мониторингін қолдау&lt;/li&gt;
+      &lt;/&gt;
+    )}
+  &lt;/ul&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Personal data may be processed in accordance with GDPR-inspired data protection principles to ensure transparency and responsible handling. Additionally, certain operational data may be used in aggregated or anonymized form to improve system efficiency and optimize user experience without directly identifying individuals.
+          &lt;br /&gt;&lt;br /&gt;
+          The platform ensures that all data usage remains limited to what is necessary for providing core services and maintaining a secure, functional booking environment across all integrated partners.
+        &lt;/&gt;
+      : &lt;&gt;
+          Жеке деректер ашықтық пен жауапкершілікпен жұмыс істеуді қамтамасыз ету үшін GDPR шабыттандырған деректерді қорғау принциптеріне сәйкес өңделуі мүмкін. Сонымен қатар, белгілі бір операциялық деректер жүйенің тиімділігін арттыру және жеке тұлғаларды тікелей анықтамай-ақ пайдаланушы тәжірибесін оңтайландыру үшін жинақталған немесе анонимді түрде пайдаланылуы мүмкін.
+          &lt;br /&gt;&lt;br /&gt;
+          Платформа барлық деректерді пайдаланудың негізгі қызметтерді ұсыну және барлық интеграцияланған серіктестерде қауіпсіз, функционалды брондау ортасын сақтау үшін қажет нәрселермен шектелуін қамтамасыз етеді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+  &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '5. Legal Basis (GDPR-Inspired)' : '5. Құқықтық Негіздер (GDPR Негіздемесінде)'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Askyinde processes personal data based on internationally recognized privacy principles inspired by the General Data Protection Regulation (GDPR). These legal foundations ensure that data usage remains transparent, justified, and limited to specific operational needs within the aviation booking ecosystem.
+          &lt;br /&gt;&lt;br /&gt;
+          The processing of user data is based on several key legal grounds that define how and why information is handled across the platform. These principles ensure that all data activities are aligned with user expectations and industry-standard privacy practices.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde деректерді Қорғаудың Жалпы Ережесінен (GDPR) шабыттанған халықаралық деңгейде танылған құпиялылық принциптеріне негізделген жеке деректерді өңдейді. Бұл құқықтық негіздер деректерді пайдаланудың ашықтығын, негізділігін және авиациялық брондау экожүйесіндегі нақты операциялық қажеттіліктермен шектелуін қамтамасыз етеді.
+          &lt;br / &gt;&lt;br /&gt;
+          Пайдаланушы деректерін өңдеу ақпараттың бүкіл платформада қалай және неліктен өңделетінін анықтайтын бірнеше негізгі заңды негіздерге негізделген. Бұл принциптер барлық деректер әрекеттерінің пайдаланушылардың күтулеріне және салалық стандартты құпиялылық тәжірибесіне сәйкес келуін қамтамасыз етеді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;p className="font-bold mb-4"&gt;
+    {language === 'en' ? 'Legal bases include:' : 'Құқықтық негіздерге мыналар жатады:'}
+  &lt;/p&gt;
+  &lt;ul className="list-disc pl-6 space-y-3 opacity-95 mb-4"&gt;
+    {language === 'en' ? (
+      &lt;&gt;
+        &lt;li&gt;Consent: Users explicitly agree to data processing when using booking and account services&lt;/li&gt;
+        &lt;li&gt;Contract necessity: Data is required to fulfill booking and ticketing agreements with airline partners&lt;/li&gt;
+        &lt;li&gt;Legitimate interest: Limited processing for fraud prevention, system security, and service optimization&lt;/li&gt;
+        &lt;li&gt;Operational necessity: Data required to maintain platform functionality and communication between partners&lt;/li&gt;
+      &lt;/&gt;
+    ) : (
+      &lt;&gt;
+        &lt;li&gt;Келісім: пайдаланушылар брондау және есептік жазба қызметтерін пайдалану кезінде деректерді өңдеуге нақты келіседі&lt;/li&gt;
+        &lt;li&gt;Келісімшарттың қажеттілігі: Деректер авиакомпания серіктестерімен брондау және билеттерді сату туралы келісімдерді орындау үшін қажет&lt;/li&gt;
+        &lt;li&gt;Заңды қызығушылық: алаяқтықтың Алдын Алу, жүйенің қауіпсіздігі және қызметтерді оңтайландыру үшін Шектеулі өңдеу&lt;/li&gt;
+        &lt;li&gt;Операциялық қажеттілік: платформаның функционалдығын және серіктестер арасындағы байланысты сақтау Үшін Қажетті Деректер&lt;/li&gt;
+      &lt;/&gt;
+    )}
+  &lt;/ul&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Personal data may be processed in accordance with GDPR-inspired data protection principles to ensure lawful, fair, and transparent handling across all operational layers of the system.
+        &lt;/&gt;
+      : &lt;&gt;
+          Дербес деректер ЖҮЙЕНІҢ барлық операциялық деңгейлерінде заңды, әділ және ашық өңдеуді қамтамасыз ету үшін GDPR шабыттандырған деректерді қорғау принциптеріне сәйкес өңделуі мүмкін.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+  &lt;section className="px-4"&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '6. Payment Security (PCI DSS-Inspired)' : '6. Төлем Қауіпсіздігі (PCI DSS Негіздемесінде)'}
+    &lt;/h3&gt;
+    &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Askyinde applies PCI DSS-inspired security practices to ensure that all payment-related processes are handled securely through certified external providers. The platform is designed to minimize exposure of sensitive financial data by using secure transaction routing and encrypted communication channels.
+          &lt;br /&gt;&lt;br /&gt;
+          Payments are not processed directly within Askyinde systems. Instead, external gateways handle all card authentication, encryption, and settlement processes. This reduces risk and ensures compliance with global payment security standards.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde төлемге қатысты барлық процестердің сертификатталған сыртқы провайдерлер арқылы қауіпсіз орындалуын қамтамасыз ету үшін PCI DSS шабыттандырылған қауіпсіздік әдістерін қолданады. Платформа транзакцияларды қауіпсіз бағыттау және шифрланған байланыс арналарын пайдалану арқылы құпия қаржылық деректердің әсерін азайтуға арналған.
+          &lt;br /&gt;&lt;br /&gt;
+          Төлемдер ТІКЕЛЕЙ Askyinde жүйелерінде өңделмейді. Оның орнына сыртқы шлюздер барлық карталардың аутентификациясын, шифрлауын және есеп айырысу процестерін басқарады. Бұл тәуекелді азайтады және төлем қауіпсіздігінің жаһандық стандарттарына сәйкестігін қамтамасыз етеді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;/section&gt;
+&nbsp;
+  &lt;section className="px-4"&gt;
+  &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+    {language === 'en' ? '7. Data Sharing' : '7. Деректер Алмасу'}
+  &lt;/h3&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Askyinde shares limited user data only when necessary to complete booking and payment-related processes. Data is never sold or disclosed for marketing purposes and is strictly controlled within the aviation service ecosystem.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde шектеулі пайдаланушы деректерін брондау және төлемге қатысты процестерді аяқтау үшін қажет болған жағдайда ғана бөліседі. Деректер ешқашан маркетингтік мақсатта сатылмайды немесе ашылмайды және авиациялық қызметтердің экожүйесінде қатаң бақыланады.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;p className="font-bold mb-4"&gt;
+    {language === 'en' ? 'Data may be shared with:' : 'Деректермен бөлісуге болады:'}
+  &lt;/p&gt;
+  &lt;ul className="list-disc pl-6 space-y-3 opacity-95 mb-4"&gt;
+    {language === 'en' ? (
+      &lt;&gt;
+        &lt;li&gt;Airline partners for ticket issuance and reservation confirmation(if necessary)&lt;/li&gt;
+        &lt;li&gt;Payment service providers for transaction processing and validation(if necessary)&lt;/li&gt;
+        &lt;li&gt;Regulatory or legal authorities when required by applicable law(if necessary)&lt;/li&gt;
+        &lt;li&gt;Technical service providers supporting platform infrastructure(if necessary)&lt;/li&gt;
+      &lt;/&gt;
+    ) : (
+      &lt;&gt;
+        &lt;li&gt;Билеттерді беру және брондауды растау бойынша авиакомпания серіктестеріне(қажет болса)&lt;/li&gt;
+        &lt;li&gt;Транзакцияларды өңдеу және валидациялау үшін төлем қызметтерін жеткізушілерге(қажет болса)&lt;/li&gt;
+        &lt;li&gt;Қолданыстағы заңнама талап еткен кезде реттеуші немесе заңды органдарға(қажет болса)&lt;/li&gt;
+        &lt;li&gt;Платформа инфрақұрылымын қолдайтын техникалық қызмет көрсетушілеріне(қажет болса)&lt;/li&gt;
+      &lt;/&gt;
+    )}
+  &lt;/ul&gt;
+  &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          All shared data is restricted to operational necessity and transmitted through secure channels to ensure confidentiality and integrity across all partner interactions.
+        &lt;/&gt;
+      : &lt;&gt;
+          Барлық ортақ деректер операциялық қажеттілікпен шектеледі және серіктестердің барлық өзара әрекеттесулерінде құпиялылық пен тұтастықты қамтамасыз ету үшін қауіпсіз арналар арқылы жіберіледі.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+&lt;/section&gt;
+&nbsp;
+  &lt;section className="px-4"&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '8. User Rights' : '8. Пайдаланушы Құқықтары'}
+    &lt;/h3&gt;
+    &lt;p className="opacity-95 mb-4"&gt;
+    {language === 'en'
+      ? &lt;&gt;
+          Users of Askyinde are granted specific rights regarding their personal data, consistent with GDPR-inspired principles. These rights ensure that individuals maintain control over how their information is stored, used, and managed within the platform.
+          &lt;br /&gt;&lt;br /&gt;
+          Users may request access to their personal data, allowing them to review what information is stored and how it is being processed. They also have the right to request corrections to inaccurate or outdated information to ensure data accuracy within booking systems. Additionally, users may request deletion of their personal data, subject to legal or operational retention requirements related to completed transactions or regulatory obligations. Data portability rights may also be available, allowing users to receive their data in a structured format for transfer to other services where applicable.
+        &lt;/&gt;
+      : &lt;&gt;
+          Askyinde пайдаланушыларына GDPR шабыттандырған принциптерге сәйкес олардың жеке деректеріне қатысты нақты құқықтар беріледі. Бұл құқықтар жеке тұлғалардың өз ақпаратының платформа ішінде қалай сақталуын, пайдаланылуын және басқарылуын бақылауды қамтамасыз етеді.
+          &lt;br /&gt;&lt;br /&gt;
+          Пайдаланушылар өздерінің жеке деректеріне қол жеткізуді сұрай алады, бұл оларға қандай ақпарат сақталатынын және оның қалай өңделетінін көруге мүмкіндік береді. Олар сондай-ақ брондау жүйелеріндегі деректердің дәлдігін қамтамасыз ету үшін дұрыс емес немесе ескірген ақпаратқа түзетулер енгізуді сұрауға құқылы. Сонымен қатар, пайдаланушылар аяқталған транзакцияларға немесе нормативтік міндеттемелерге байланысты заңды немесе операциялық сақтау талаптарын ескере отырып, жеке деректерін жоюды сұрай алады. Сондай-ақ, деректерді тасымалдау құқықтары қол жетімді болуы мүмкін, бұл пайдаланушыларға қажет болған жағдайда басқа қызметтерге тасымалдау үшін құрылымдық форматта өз деректерін алуға мүмкіндік береді.
+        &lt;/&gt;
+    }
+  &lt;/p&gt;
+  &lt;/section&gt;
+&nbsp;
+&nbsp;
+  {/* Section 3: Data Sharing - Выделенная карточка */}
+  &lt;section className={glassCardClass}&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '9. When is your data shared with Third Parties?' : '9. Деректер қашан үшінші тұлғалармен бөлісіледі?'}
+    &lt;/h3&gt;
+    &lt;p className="opacity-95"&gt;
+      {language === 'en'
+        ? 'We share your data with Travel Providers (airlines, hotels) only to complete the booking you have requested. We do not sell your personal data to third-party advertisers.'
+        : 'Біз сіздің деректеріңізді тек сіз сұраған брондауды аяқтау үшін Қызмет көрсетушілермен (әуе компаниялары, қонақ үйлер) бөлісеміз. Біз сіздің жеке деректеріңізді үшінші тарап жарнама берушілеріне сатпаймыз.'}
+    &lt;/p&gt;
+  &lt;/section&gt;
+&nbsp;
+  {/* Section 4: Security - Обычный текст */}
+  &lt;section className="px-4"&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '10. How do we keep data secure?' : '10. Деректерді қалай қауіпсіз сақтаймыз?'}
+    &lt;/h3&gt;
+    &lt;p className="opacity-95"&gt;
+      {language === 'en'
+        ? 'We implement industry-standard encryption (SSL) and security protocols to protect your data from unauthorized access, loss, or disclosure.'
+        : 'Біз сіздің деректеріңізді рұқсатсыз кіруден немесе жариялаудан қорғау үшін салалық стандартты шифрлауды (SSL) және қауіпсіздік хаттамаларын қолданамыз.'}
+    &lt;/p&gt;
+  &lt;/section&gt;
+&nbsp;
+  {/* Section 5: Contact - Финальный блок */}
+  &lt;section className="px-4 border-t border-white/20"&gt;
+    &lt;h3 className="text-[20px] font-bold mb-4"&gt;
+      {language === 'en' ? '11. Contact us' : '11. Бізбен байланысу'}
+    &lt;/h3&gt;
+    &lt;p className="opacity-90 italic leading-relaxed"&gt;
+      {language === 'en' ? (
+      &lt;&gt;
+        If you have questions about this policy, please contact us at: &lt;u&gt;support@askyinde.com&lt;/u&gt; and contact numbers: for Kazakhstan &lt;u&gt;+7(705)342-85-88&lt;/u&gt;, for Uzbekistan &lt;u&gt;+998(99)087-85-66&lt;/u&gt;
+      &lt;/&gt;
+    ) : (
+      &lt;&gt;
+        Осы саясат бойынша сұрақтарыңыз болса, бізге хабарласыңыз: &lt;u&gt;support@askyinde.com&lt;/u&gt; және байланыс телефондары: Қазақстан үшін &lt;u&gt;+7(705)342-85-88&lt;/u&gt;, Өзбекстан үшін &lt;u&gt;+998(99)087-85-66&lt;/u&gt;
+      &lt;/&gt;
+)}
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+    )}
+  &lt;/div&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/main&gt;
+&nbsp;
+      {/* FOOTER */}
+      &lt;footer className="animate-rise-up relative z-20 w-full bg-white/40 backdrop-blur-md border-t-2 border-white/40 py-6 text-center"&gt;
+        &lt;p className="btn-bold-sora" style={{ color: '#0A4A5E', fontSize: '16px', fontWeight: '600' }}&gt;
+          © Askyinde Ltd 2025-2026&lt;/p&gt;
+      &lt;/footer&gt;
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+export default LegalLawPage;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-05-22T09:44:19.334Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
